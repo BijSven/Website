@@ -15,7 +15,7 @@ if(detectMobile()) {
 
 window.addEventListener('load', function() {
   const skillElement = document.getElementById("id-skill");
-  const words = ["Designer", "Frontend Dev.", "Backend Dev.", "🖥️ System Admin"];
+  const words = ["Designer", "Frontend Dev.", "Backend Dev.", "System Admin"];
   let index = 0;
   let charIndex = 0;
 
