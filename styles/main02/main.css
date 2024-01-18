@@ -1,0 +1,30 @@
+.main2 {
+    position: inherit;
+    height: 100vh;
+}
+
+.main2-story-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main2-story {
+    transition-duration: 500ms;
+    overflow: hidden;
+    background-color: #DEDEDE;
+    height: 25vh;
+    width: 25vw;
+    border-radius: 30px;
+    padding: calc(1vw + 1vh);
+    padding-bottom: calc(2.5vw + 2.5vh);
+    color: #5C5C5C;
+    text-align: center;
+    font-size: calc(0.7vh + 0.7vw);
+}
+
+.main2-story h1 {
+    font-size: calc(1.5vh + 1.5vw);
+}

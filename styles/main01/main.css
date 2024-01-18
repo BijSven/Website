@@ -1,0 +1,32 @@
+/* .main1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.main1-text {
+    user-select: none;
+    transition-duration: 500ms;
+}
+
+.space-left {
+    transition-duration: 500ms;
+    margin-left: -3vw;
+    font-size: calc(1.25vw + 1.25vh);
+    color: #8E8E8E;
+}
+
+.space-right {
+    transition-duration: 500ms;
+    margin-right: -3vw;
+    font-size: calc(1.75vw + 1.75vh);
+    color: #000000;
+}
+
+.main1 {
+    position: inherit;
+    height: 100vh;
+} */

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sven's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+        <link rel="stylesheet" href="./style.css">
+        <meta name="title" content="Sven's Portfolio">
+        <meta name="description" content="Hey! I'm Sven, a dutch student and developer!">
+        <script defer src="./scripts/app.js"></script>
+        <script defer src="./scripts/effect.js"></script>
+        <script defer src="./scripts/cursor.js"></script>
+        <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/darkreader/darkreader.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://kit.fontawesome.com/80a1a2f51f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <a onclick="location.reload()"><img src="./assets/logo.png" draggable="false" class="NavLogo"></a>
+        <div class="circle" id="circle"></div>
+        <div style="display: grid;">
+            <section style="display: flex; justify-content: center; align-items: center;" id="start">
+                <div class="main1-text">
+                    <h1 class="space-left">👋 Howdy!</h1>
+                    <h1 class="space-right">I'm Sven</h1>
+                    <h1 class="space-left" id="id-skill">idle.animator</h1>
+                    <div class="blocks">
+                        <div style="position: absolute; transition-duration: 500ms; background: #FFD772; border-radius: 15px; transform: rotate(7deg); width: calc(7.5vh + 7.5vw); height: calc(7.5vh + 7.5vw); top: 0; left: 0; margin-top: 40vh; margin-left: 10vw;"></div>
+                        <div style="position: absolute; transition-duration: 500ms; background: #FF7777; border-radius: 15px; transform: rotate(61deg); width: calc(7.5vh + 7.5vw); height: calc(7.5vh + 7.5vw); top: 0; right: 0; margin-top: 17vh; margin-right: 10vw;"></div>
+                        <div style="position: absolute; transition-duration: 500ms; background: #66FFAC; border-radius: 125px; width: calc(6vh + 6vw); height: calc(6vh + 6vw); bottom: 0; right: 0; margin-bottom: 15vh; margin-right: 20vw;"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="story">
+                <div style="position: relative; z-index: 5; height: 100%; width: 100%;">
+                    <h2 style="font-size: calc(2.5vw  + 2.5vh); position: absolute; margin-top: 15%; margin-left: 17.5%; color: #74A3FF;">Yep! This is me!</h2>
+                    <p style="font-size: calc(1vw  + 1vh); position: absolute; margin-top: 20%; margin-left: 17.5%; width: 50%;">Let me introduce you to Sven, a Dutch developer with a diverse skill set and over 2k requests/month on his website(s). Sven's expertise encompasses a range of technologies, including Dart with Flutter, Svelte, PocketBase, Python with Flask, and HTML, CSS, JavaScript. He's also proficient in Docker, Bash scripting, and networking. In addition to his technical skills, Sven has experience with design in Figma. Sven has lot of projects over the past 2 years, like a social media platform named Howdy, A dutch minecraft server with over 200 members, a school platform, and much more...</p>
+                </div>
+                <svg style="position: absolute; top: 0; left: 0; width: 30%;" viewBox="0 0 309 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M48.7797 -214.903C116.384 -213.059 177.888 -178.055 225.735 -127.025C273.614 -75.9613 307.019 -10.3207 308.341 61.9227C309.687 135.508 282.122 207.001 232.786 258.399C184.024 309.201 116.908 332.282 48.7797 332.339C-19.4068 332.396 -88.4317 311.371 -135.516 258.708C-181.709 207.042 -192.642 133.351 -192.991 61.9227C-193.343 -9.98192 -183.38 -84.3418 -137.451 -136.929C-90.1761 -191.059 -20.5148 -216.793 48.7797 -214.903Z" fill="#C6E3FE"/>
+                </svg>
+                <svg style="width: 30%; position: absolute; bottom: 0; right: 0;" viewBox="0 0 435 352" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M191.119 5.45469C338.889 -15.3506 525.352 19.7559 563.669 173.557C599.725 318.283 427.035 395.385 307.991 474.571C224.299 530.241 121.762 583.785 43.7439 519.401C-30.3799 458.231 6.23117 343.827 33.6582 248.18C63.4937 144.134 90.0861 19.6796 191.119 5.45469Z" fill="#FFE68C"/>
+                </svg>
+            </section>
+            <section id="projects">
+                <svg style="width: 35%; position: absolute; top: 0; right: 0;" viewBox="0 0 488 395" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M231.663 -111.515C312.479 -118.419 373.791 -245.633 447.161 -211.053C514.71 -179.217 476.542 -69.4943 479.168 5.1353C481.04 58.3509 481.071 110.822 460.211 159.814C440.752 205.515 403.75 238.198 366.126 270.628C324.79 306.256 283.999 341.347 231.663 356.805C163.344 376.985 74.1979 422.03 23.7189 371.765C-29.4259 318.845 22.8473 227.209 26.2762 152.289C28.3041 107.98 37.6408 67.4817 39.6729 23.1733C42.7971 -44.9467 -14.4739 -137.225 41.3504 -176.388C97.5935 -215.845 163.209 -105.668 231.663 -111.515Z" fill="#FFF3D2"/>
+                </svg>
+                <svg style="width: 30%; z-index: -1; position: absolute; margin-bottom: -3.4%; bottom: 0; left: 0; transform: rotate(90deg);" viewBox="0 0 384 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style="width: 60%; position: absolute; bottom: 0; right: 0;" viewBox="0 0 1025 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M698.273 155.745C841.905 155.572 953.627 -35.8411 1091.04 5.97332C1224.59 46.6144 1270.39 214.036 1319.39 344.754C1370.48 481.032 1459.67 647.583 1376.29 766.871C1288.45 892.543 1087.17 831.304 942.943 883.328C854.172 915.347 792.087 1001.22 698.273 1011.43C598.008 1022.34 495.434 997.209 411.602 941.136C325.624 883.627 287.541 784.85 230.511 698.553C147.138 572.394 -15.2886 470.385 1.16095 320.063C17.4098 171.576 160.806 41.1909 306.196 6.92085C445.671 -25.9551 554.975 155.918 698.273 155.745Z" fill="#0078CF"/>
+                </svg>                    
+                <div style="text-align: left; display: flex; flex-direction: column; width: 100%; justify-content: center; height: 100%;">
+                    <h2 style="font-size: calc(2.5vw  + 2.5vh); margin-left: 32.5%; color: #74A3FF;">Projects</h2>
+                    <p style="font-size: calc(1vw  + 1vh); margin-left: 35%; margin-top: -2.5%;">I work on the next projects;
+                        <br>- ORAE IBC. (<a href="https://twitter.com/ORAENet">Twitter</a>)
+                        <br><span special="./assets/howdy.png">- Howdy!</span>
+                        <br><span>- Centered</span>
+                        <br><span>- Konnect</span>
+                    </p>
+                </div>
+            </section>
+            <section id="hobby's">
+                <div style="position: relative; z-index: 5; height: 100%; width: 100%;">
+                    <h2 style="font-size: calc(2.5vw  + 2.5vh); position: absolute; margin-top: 15%; margin-left: 17.5%; color: #077037;">Hobby's!</h2>
+                    <p style="font-size: calc(1vw  + 1vh); position: absolute; margin-top: 20%; margin-left: 17.5%; width: 50%;">He cherishes a variety of interests and passions. He regularly finds joy in longboarding, practices the art of <special special="https://images.unsplash.com/photo-1550759774-a027cb60b309?auto=format&fit=crop&q=80&w=2053&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">Jiu-Jitsu</special>, and delves into the world of programming. His love for listening to music, decorating his surroundings, assisting others, and capturing special moments in photos fills his days with meaning and satisfaction. Moreover, he has diligently managed a community of 200 members, where he shares his passions and interests, inspiring others along the way.</p>
+                </div>
+                <svg style="width: 25%; position: absolute; top: 0; left: 0;" viewBox="0 0 371 444" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M105.095 -116.653C188.123 -133.801 285.461 -109.76 338.634 -43.7273C389.47 19.4052 367.843 110.344 351.872 189.811C339.564 251.053 305.354 301.741 260.473 345.188C216.554 387.703 165.409 418.766 105.095 428.701C30.6266 440.968 -63.4791 464.642 -111.567 406.473C-159.591 348.382 -105.052 264.112 -92.3942 189.811C-83.0982 135.244 -78.4748 82.753 -48.4911 36.2244C-7.8148 -26.8971 31.5549 -101.465 105.095 -116.653Z" fill="#C6F5D9"/>
+                </svg>
+                <svg style="width: 50%; position: absolute; top: 0; right: 0;" viewBox="0 0 1203 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1262.42 -807.729C1522.27 -766.108 1807.23 -770.143 1985.94 -576.977C2160.29 -388.533 2167.16 -109.249 2145.3 146.543C2125.59 377.192 2023.19 580.821 1872 756.117C1705.22 949.481 1517.65 1178.22 1262.42 1170.17C1009.99 1162.2 883.263 881.585 690.135 718.831C462.17 526.718 125.96 434.225 47.7679 146.543C-45.1557 -195.337 -15.6714 -634.091 262.919 -852.961C535.551 -1067.15 920.082 -862.563 1262.42 -807.729Z" fill="#FFEDBD"/>
+                </svg>                    
+                <svg style="width: 40%; position: absolute; bottom: 0; left: 0;" viewBox="0 0 452 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M451.458 380.427C446.67 474.978 375.708 558.481 291.637 602.01C214.831 641.778 122.42 624.716 42.2301 592.311C-22.8147 566.026 -55.9355 502.15 -96.7255 445.072C-138.808 386.186 -192.11 332.981 -194.784 260.653C-198.115 170.546 -191.412 57.6752 -112.672 13.7375C-34.5571 -29.8519 53.6883 45.359 138.13 74.883C202.419 97.3613 265.114 115.326 313.874 162.875C377.735 225.149 455.97 291.344 451.458 380.427Z" fill="#C4DEF5"/>
+                </svg>
+            </section>
+            <section id="gallery">
+                <div style="height: 100%; display: flex; justify-self: center; align-self: center; justify-content: center; align-items: center; flex-direction: column;">
+                    <h2 style="margin-bottom: 2%; font-size: calc(2.5vw + 2.5vh); justify-self: center; align-self: center; display: flex; color: rgba(136, 49, 176, 0.932);">Gallery!</h2>
+                    <div class="gallery" id="all-images"></div>
+                </div>
+                <svg style="width: 40%; position: absolute; bottom: 0; left: 0; z-index: -1;" viewBox="0 0 452 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M451.458 380.427C446.67 474.978 375.708 558.481 291.637 602.01C214.831 641.778 122.42 624.716 42.2301 592.311C-22.8147 566.026 -55.9355 502.15 -96.7255 445.072C-138.808 386.186 -192.11 332.981 -194.784 260.653C-198.115 170.546 -191.412 57.6752 -112.672 13.7375C-34.5571 -29.8519 53.6883 45.359 138.13 74.883C202.419 97.3613 265.114 115.326 313.874 162.875C377.735 225.149 455.97 291.344 451.458 380.427Z" fill="#C4DEF5"/>
+                </svg>
+                <svg style="width: 35%; position: absolute; top: 0; right: 0; z-index: -1;" viewBox="0 0 488 395" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M231.663 -111.515C312.479 -118.419 373.791 -245.633 447.161 -211.053C514.71 -179.217 476.542 -69.4943 479.168 5.1353C481.04 58.3509 481.071 110.822 460.211 159.814C440.752 205.515 403.75 238.198 366.126 270.628C324.79 306.256 283.999 341.347 231.663 356.805C163.344 376.985 74.1979 422.03 23.7189 371.765C-29.4259 318.845 22.8473 227.209 26.2762 152.289C28.3041 107.98 37.6408 67.4817 39.6729 23.1733C42.7971 -44.9467 -14.4739 -137.225 41.3504 -176.388C97.5935 -215.845 163.209 -105.668 231.663 -111.515Z" fill="#FFF3D2"/>
+                </svg>
+            </section>
+            <section id="ready">
+                <div style="margin: 0; height: 100%; display: flex; justify-self: center; align-self: center; justify-content: center; align-items: center; flex-direction: column;">
+                    <h2 style="margin: 0; color: rgba(0, 0, 0, 0.5);">Ready to start your project?</h2>
+                    <h1 class="email" style="transition-duration: 500ms; font-size: 225%;"><a class="email" style="transition-duration: 500ms; text-decoration: inherit;" href="mailto:project@bijsven.nl">project@bijsven.nl</a></h1>
+                    <h3 style="margin: 0; color: rgba(0, 0, 0, 0.45);">Speak ya soon!</h2>
+                </div>
+            </section>
+            <section id="footer" style="background: #0d0d11; color: white;">
+                <div style="transition: 0.5s; margin-bottom: 2.5%; margin-right: 2.5%; bottom: 0; right: 0; position: absolute; border: solid 1px white; padding: calc(1vw + 1vh); border-radius: 15px; width: calc(1vw + 1vh); height: calc(1vw + 1vh); cursor: pointer;" id="darkLightSwitch" onclick="toggleDarkMode()">
+                    <i style="transition: opacity 0.5s; font-size: calc(1vw + 1vh); font-weight: bold;" id="icon" class="fa fa-sun"></i>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    <div style="font-size: calc(1vw + 1vh); width: 70%; height: fit-content; display: grid; grid-template-columns: 40% 1fr 1fr 1fr;">
+                        <div>
+                            <ul style="font-weight: bold;">Sven's Portfolio</ul>
+                            <ul>Mail: <a href="mailto:mail@bijsven.nl">mail@bijsven.nl</a></ul>
+                            <ul special="https://images.unsplash.com/photo-1597945161640-9366e6d4253b?auto=format&fit=crop&q=80&w=400&ixlib=rb-4.0.3">Location: <a href="https://www.google.com/maps/place/Nederland/@52.2073245,3.9604962,8z">The Netherlands</a></ul>
+                        </div>
+                        <div>
+                            <ul style="font-weight: bold; text-decoration: underline;">Social</ul>
+                            <ul special="https://pbs.twimg.com/profile_images/1691354625494994944/GcXjnx0R_400x400.jpg"><a style="text-decoration: inherit;" href="https://x.com/BijSvenNL">Twitter</a></ul>
+                            <ul special="https://pbs.twimg.com/profile_images/1691354625494994944/GcXjnx0R_400x400.jpg"><a style="text-decoration: inherit;" href="https://discord.com/users/914162596381339698">Discord</a></ul>
+                        </div>
+                        <div>
+                            <ul style="font-weight: bold; text-decoration: underline;">Legal</ul>
+                            <ul>Terms</ul>
+                            <ul>Service</ul>
+                        </div>
+                        <!-- <div>
+                            <ul style="font-weight: bold; text-decoration: underline;">Useful Links</ul>
+                            <ul><a style="text-decoration: inherit;" href="https://orae.one">ORAE</a></ul>
+                            <ul special="./assets/howdy.png"><a style="text-decoration: inherit;" href="https://howdy.orae.one">Howdy</a></ul>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

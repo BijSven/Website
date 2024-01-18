@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+section {
+    position: relative;
+    user-select: none;
+    height: 100vh;
+}
+
+.circle {
+    width: calc(1vw + 1vh);
+    height: calc(1vw + 1vh);
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.575);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    pointer-events: none;
+    z-index: 10;
+    margin-left: -0.79vw;
+    margin-top: -1.25vh;
+    transition: 500ms padding;
+}
+
+.img-gallery {
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
+    border-radius: 15px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    transition-duration: 500ms;
+    transition: transform .5s;
+}
+
+.img-gallery:hover {
+    transform: scale(1.15);
+}
+
+.gallery {
+    height: fit-content;
+    width: 80%;
+    display: flex; 
+    overflow-x: scroll;
+    align-items: center;
+    padding: calc(1vw + 1vh);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+ 
+.gallery::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.NavLogo {
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition-duration: 500ms;
+    height: calc(2.5vw + 2.5vh);
+    padding-left: calc(1vw + 1vh);
+    padding-top: calc(1vw + 1vh);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.main1-text {
+    user-select: none;
+    transition-duration: 500ms;
+}
+
+.email:hover {
+    font-size: 150%;
+}
+
+.space-left {
+    transition-duration: 500ms;
+    margin-left: -3vw;
+    font-size: calc(1.25vw + 1.25vh);
+    color: #8E8E8E;
+    position: relative;
+}
+
+.space-right {
+    transition-duration: 500ms;
+    margin-right: -3vw;
+    font-size: calc(1.75vw + 1.75vh);
+    color: #000000;
+}
+
+#id-skill {
+    height: 1.5vh;
+}
+
+.main2-story h1 {
+    font-size: calc(1.5vh + 1.5vw);
+}
+
+a[href] {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.75);
+}

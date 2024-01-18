@@ -1,0 +1,60 @@
+/* .main2-block-green {
+    position: absolute;
+    transition-duration: 500ms;
+    background: #66FFAC;
+    border-radius: 100%;
+    width: calc(7.5vh + 7.5vw);
+    height: calc(7.5vh + 7.5vw);
+    top: 0;
+    left: 0;
+    margin-top: 15vh;
+    margin-left: 15vw;
+}
+
+.main2-block-red {
+    position: absolute;
+    transition-duration: 500ms;
+    background: #FF7777;
+    transform: rotate(61deg);
+    border-radius: 15px;
+    width: calc(9vh + 9vw);
+    height: calc(9vh + 9vw);
+    bottom: 0;
+    left: 0;
+    margin-bottom: 15vh;
+    margin-left: 12.5vw;
+}
+
+.main2-block-purple {
+    position: absolute;
+    transition-duration: 500ms;
+    background: #B377FF;
+    transform: rotate(61deg);
+    border-radius: 15px;
+    width: calc(9vh + 9vw);
+    height: calc(15vh + 15vw);
+    bottom: 0;
+    right: 0;
+    margin-bottom: 7.5vh;
+    margin-right: 10vw;
+}
+
+.main2-block-yellow {
+    position: absolute;
+    transition-duration: 500ms;
+    background: #FFD772;
+    border-radius: 15px;
+    transform: rotate(7deg);
+    width: calc(7.5vh + 7.5vw);
+    height: calc(7.5vh + 7.5vw);
+    top: 0;
+    right: 0;
+    margin-top: 15vh;
+    margin-right: 10vw;
+}
+
+.main2-blocks {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+} */

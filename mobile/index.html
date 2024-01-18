@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sven's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+        .background-blocks {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(45deg, #3498db, #2e87cc);
+            z-index: -1;
+        }
+        .background-blocks::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/random/?mobile');
+            background-repeat: none;
+            background-size: cover;
+            z-index: -1;
+            filter: blur(25px);
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #cc822e;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blocks"></div>
+    <div class="container">
+        <h1>Wait, before you go...</h1>
+        <p>This website is optimized for desktop computers. For the best experience, please visit us from a desktop device. You can continue with a mobile experience by clicking the button below.</p>
+        <button onclick="sessionStorage.setItem('forceMB', true); window.location.href = '../';">Continue with mobile experience</button>
+    </div>
+</body>
+</html>
